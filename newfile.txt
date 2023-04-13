@@ -1,3 +1,4 @@
- it 's my new file 
+Hello 
+it 's my new file 
 is my second entry
 third entry
