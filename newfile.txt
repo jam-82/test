@@ -2,3 +2,4 @@ Hello
 it 's my new file 
 is my second entry
 third entry
+fourth example in branch fourth-entry-example
