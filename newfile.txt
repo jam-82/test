@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Hello TEST
 it 's my new file 
 is my second entry
