@@ -4,7 +4,6 @@ is my second entry
 third entry
 fourth example in branch fourth-entry-example
 
-<<<<<<< HEAD
 
 this text is for my for my branch new-text
 
