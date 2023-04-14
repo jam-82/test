@@ -6,3 +6,5 @@ fourth example in branch fourth-entry-example
 
 
 this text is for my for my branch new-text
+
+other text
