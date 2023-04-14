@@ -5,7 +5,7 @@ third entry
 fourth example in branch fourth-entry-example
 
 
-this text is for my for my branch new-text
+this text is for my master
 
 other text
 
