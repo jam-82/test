@@ -13,4 +13,6 @@ other text
 git it 's my new file 
 is my second entry
 third entry
-fourth example in branch 
+fourth example in branch
+
+i put an other line of text
