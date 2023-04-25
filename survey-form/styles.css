@@ -1,0 +1,24 @@
+html {
+    font-size: 16px;
+    margin: 0;
+  }
+  main {
+    width: 233px;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  
+  input {
+    display: block;
+    margin: 10px 3px;
+  }
+  #title {
+    color: red;
+     text-align: center;
+     letter-spacing: 1rem;
+  }
+  #description {
+    background-color: green;
+    text-align: center;
+    letter-spacing: 0.2rem;
+  }
