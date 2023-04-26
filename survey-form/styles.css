@@ -41,7 +41,40 @@ html {
     color: orange;
   }
 
+  /*====form====*/
+  form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.5rem;
+  }
+
+  .form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+    border: 3px solid sandybrown;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-control {
+    
+  }
+
+
+
   /*====media queries=====*/
+  @media (min-width: 480px) {
+    form {
+        padding: 2.5rem;
+    }
+  }
+
+
   @media (min-width: 576px) {
     main {
         max-width: 540px;
