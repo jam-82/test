@@ -3,22 +3,85 @@ html {
     margin: 0;
   }
   main {
-    width: 233px;
-    height: 100vh;
-    margin: 0 auto;
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
   }
   
   input, select {
     display: block;
     margin: 10px 3px;
   }
-  #title {
-    color: red;
+  /*====header====*/
+  .header {
+    padding: 0 1.625rem;
+    margin-bottom: 1.875rem;
+    border: 2px solid purple;
+  }
+  
+  .text-center{
      text-align: center;
-     letter-spacing: 1rem;
   }
-  #description {
+
+  h1, p {
     background-color: green;
-    text-align: center;
-    letter-spacing: 0.2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
   }
+  h1 {
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  .description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.9);
+  }
+  p {
+    font-size: 1.125rem;
+    color: orange;
+  }
+
+  /*====media queries=====*/
+  @media (min-width: 576px) {
+    main {
+        max-width: 540px;
+    }
+  }
+
+
+  /*======correction webtool======*/
+/*image de fond*/
+  body::before {
+    content: "🐠";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136,136,2,0.8)),url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+  }
+  *, ::before, ::after {
+    box-sizing: border-box;
+  }
+  /*root*/
+  :root {
+      --color-white: #f3f3f3;
+      --color-darkblue: #1b1b32;
+      --color-darkblue-alpha: rgba(27,27,50,0.8);
+      --color-green: #37af65;
+  }
+  /*body*/
+  body {
+      font-family: "Poppins", sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.4;
+      color: var(--color-white);
+  }
+  
+  
