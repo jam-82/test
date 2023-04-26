@@ -9,28 +9,69 @@
 <html>
   <body>
     <main>
-  <h1 id="title">survey</h1>
-  <p id="description">my description go here</p>
+    <header>
+        <h1 id="title">survey </h1>
+        <p id="description">Thanks you for taking the time to help us improve the platform</p>
+    </header>
   <form id="survey-form">
-    <label id="name-label">name<input type="text" id="name" required placeholder="enter your name"></label>
-    <label id="email-label">email<input placeholder="enter your email" type="email" id="email" required></label>
-    <label id="number-label">age<input placeholder="enter your age" type="number" id="number" min=18 max=25></label>
-<select id="dropdown">
-  <option>select your city</option>
-  <option>paris</option>
-  <option>marseille</option>
-</select>
-<label><input type="radio" name="vehicule" value="1">car</label>
-<label><input type="radio" name="vehicule" value="2">bike</label>
-<label><input type="radio" name="vehicule" value="3">metro</label>
-<label><input type="checkbox" value="what-i-like">like cooking</label>
-<label><input type="checkbox" value="what-i-like">like reading</label>
-<label><input type="checkbox" value="what-i-like">like talking</label>
-  <textarea>
-    give your opinion
-  </textarea>
-<input type="submit" value="submit" id="submit">
-
+    <!--credentials-->
+      <div class="form-group"><label for="name" id="name-label">Name</label><input type="text" id="name" placeholder="enter your name" name="name" required></div>
+      <div class="form-group"><label id="email-label" for="email">Email</label><input placeholder="enter your email" type="email" id="email" name="email" required></div>
+      <div class="form-group"><label id="number-label" for="number">Age<span class="clue">(optional)</span></label><input placeholder="Age" type="number" id="number" name="age" min=10 max=99></div>
+      <!--select options_1-->
+      <div class="form-group">
+        <p>Which option best describes your current role</p>
+        <select id="dropdown" name="role" required="">
+          <option disabled="" selected="" value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <!--radio button-->
+      <div class="form-group">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label><input type="radio" name="user-recommend" value="definitely" checked>Definitely</label>
+        <label><input type="radio" name="user-recommend" value="maybe">Maybe</label>
+        <label><input type="radio" name="user-recommend" value="not-sure">Not sure</label>
+      </div>
+      <!--select option_2-->
+      <div class="form-group">
+        <p>What is your favorite feature of freeCodeCamp?</p>
+        <select id="most-like" name="mostlike" required="">
+          <option disabled="" selected="" value="">Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="openSource">Open Source</option>
+        </select>
+      </div>
+      <!--checkbox-->
+      <div class="form-group">
+        <p>What would you like to see improved?<span class="clue">(Check all that apply)</span></p>
+        <label><input type="checkbox" name="prefer" value="front-end-project">Front-end Projects</label>
+        <label><input type="checkbox" name="prefer" value="back-end-projects">Back-end Projects</label>
+        <label><input type="checkbox" name="prefer" value="data-visualization">Data Visualization</label>
+        <label><input type="checkbox" name="prefer" value="challenges">Challenges</label>
+        <label><input type="checkbox" name="prefer" value="open-source-commmunity">Open Source Community</label>
+        <label><input type="checkbox" name="prefer" value="gitter-help-rooms">Gitter help rooms</label>
+        <label><input type="checkbox" name="prefer" value="videos">Videos</label>
+        <label><input type="checkbox" name="prefer" value="city-meetups">City Meetups</label>
+        <label><input type="checkbox" name="prefer" value="wiki">Wiki</label>
+        <label><input type="checkbox" name="prefer" value="forum">Forum</label>
+        <label><input type="checkbox" name="prefer" value="additional-courses">Additional Courses</label>
+      </div>
+      <!--text area-->
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>  
+      <!--submit button-->
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
   </form>
   </main>
   </body>
