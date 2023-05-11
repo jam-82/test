@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>technical documentation</title>
+    </head>
+  
+  <body>
+<!--current task styling -->
+        <nav id="navbar">
+          <header class="h-nav">JS Documentation</header>
+          <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#what_you_should_already_know">what you should already know</a></li>
+            <li><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a></li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+            <li><a class="nav-link" href="#Constants">Constants</a></li>
+            <li><a class="nav-link" href="#if...else_statement">if...else statement</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+          </ul>
+        </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>
+          Introduction
+        </header>
+          <p>JavaScript is a cross-platform, object oriented scripting language.</p>
+          <p>It is a small and lightweignt language. Inside a host environment (for example, a we browser).</p>
+        <ul>
+          <li>JavaScript can be connected to the objects of its environment to provide programmatic control over them.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="what_you_should_already_know">
+        <header>
+          what you should already know
+        </header>
+        <p>This guide assumes you have the following basic</p>
+        <ul>
+          <li>A general undderstanding of the Internet and the World Wide Web (WWW).</li>
+          <li>Good working knowledge of HyperText Markup Language (HTML)</li>
+          <li>Some programming experience.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="JavaScript_and_Java">
+        <header>
+          JavaScript and Java
+        </header
+        <p>JavaScript and Java are similar in some ways but fundamentally different</p>
+        <p>The JavaScript language resembles Java but does not have java's static typing and strong type checking.</p>
+        <code>JavaScript has a prototype-based object model.</code>
+        <ul>
+          
+          <li>The prototype-based model provides dynamic inheritance</li>
+          <li>JavaScript is a very free-form language compared to Java.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header>
+          Hello world
+        </header>
+        <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+        <code>function greetMe(yourName) { alert("Hello " + yourName); }
+          greetMe("World");
+        </code>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>
+          Variables
+        </header>
+        <p><You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules./p>
+        <p>A JavaScript identifier must start with a letter, underscore(_), or dollar sign ($); subsequent characters can also be digits (0-9).</p>
+        <p>JavaScript is case sensitive</p>
+      </section>
+      <section class="main-section" id="Variable_scope">
+        <header>
+          Variable scope
+        </header>
+        <p>When you declare a varialble outside of any function, it is called a global variable, because it is available to any other code in the current document</p>
+        <code>if (true) { var x = 5; } console.log(x); //5 </code>
+        <p>This behaviour changes, when using the let declaration introduced in ECMAScript 2015</p>
+        <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined</code>
+      </section>
+      <section class="main-section" id="Constants">
+        <header>
+          Constants
+        </header>
+        <p>You can create a read -only,named constant with the const keyword.</p>
+        <ul>
+          <li>The syntax of a constant identifier is teh same as for a variable identifier/</li>
+        </ul>
+        <p>You cannot declare a constant with the same name as a function or variable in the same scope.</p>
+        <p>However, object attributes are not protected, so the following statement is executed without problems.</p>
+        <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code>
+      </section>
+      <section class="main-section" id="if...else_statement">
+        <header>
+          if...else statement
+        </header>
+        <p>Use the if statement to execute a statement if the logical condition is true.</p>
+        <code>if (condition) { statement_1; } else { statement_2; }</code>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>
+          Reference
+        </header>
+        <p>
+          <ul>
+            <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></li>
+          </ul>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
