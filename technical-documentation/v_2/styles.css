@@ -1,6 +1,10 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,200;0,400;1,600&family=Roboto&display=swap');
+
+
+*, *::before, *::after {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
   }
   
   html {
@@ -17,7 +21,7 @@
     padding-left: 22px;
     padding-right: 43px;
     line-height: 1.5;
-    font-family: "Open Sans";
+    font-family: "Poppins","Open Sans";
     color: #4d4e53;
     font-size: 0.9rem;
   }
