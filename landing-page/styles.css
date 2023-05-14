@@ -7,12 +7,19 @@ body {
     position: relative;
     top: 55px;
   }
+
   *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
+#form {
+  margin-top: -44px;
+  padding-top: 33px;
+}
+
+
   #header {
     display: flex;
     justify-content: space-between;
