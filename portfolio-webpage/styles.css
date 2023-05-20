@@ -1,51 +1,59 @@
-
-  main {
-    margin-bottom: 10px;
-    padding: 0;
-  }
-  body {
-    margin: 0 3px;
-    min-height: 333vh;
+* {
+    border: 1px solid red;
     box-sizing: border-box;
+}
+ 
+ 
+
+body {
+    margin: 0 3px;
     overflow: hidden;
-  }
+}
 
   /*=========welcome section========*/
-  #welcome-section h1 {
-   height: 100vh;
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    color: orange;
-    text-align: center;
-    text-shadow: 1px 1px 2px  black; 
-    
-  }
-  
-
   #welcome-section {
     height: 100vh;
     width: 100%;
-    margin-top: -28px;
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd.newsweek.com%2Fen%2Ffull%2F1737181%2Fman-working-computer.jpg&f=1&nofb=1&ipt=53f8c30784a7c36929417ec7264cc4e2bcc6da06a3ce682ea3b9e05b5184111b&ipo=images");
-    background-size: cover;
+    background: repeating-linear-gradient(lightslategray 20%,lightslategray 24%, lightgreen 30%, lightgreen 33%);
     opacity: 0.8;
-    background-position: top 50px left -32px;
+    line-height: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+    align-items: center;
   }
   
+  #welcome-section h1 {
+    color: rgb(15, 9, 9);
+    text-align: center;
+    text-shadow: 1px 2px 2px  blue; 
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 4rem;
+  }
+  #welcome-section p {
+    text-align: center;
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+  }
+  
+
   /*============navbar==============*/
   #navbar {
     position: fixed;
     top: 0;
-    background-color: lightblue;
+    background-color: rgba(30, 29, 29, 0.7);
     margin: 0 auto;
     width: 100%;
-    border-bottom: 4px solid gold
+    border-bottom: 8px solid black;
   }
   ul {  
     display: flex;
-  justify-content: space-between;
-    width: 440px;
+    justify-content: space-around;
+    width: 100%;
     padding: 0;
     margin: 8px auto;
     
@@ -54,22 +62,35 @@
   li {
     list-style: none;
   }
-  a {
+  #navbar a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 0.80rem;
+    font-size: 0.8rem;
     letter-spacing: 0.3rem;
+    color: white;
+  }
+
+  footer {
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
     
   }
-  footer {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 10px;
-  }
   
-  @media (max-width: 350px){
+  /*==========mediaqueries==========*/
+  @media (max-width: 300px){
     body {
-      background-color: #c30000;
+      background-color: navy;
       margin: 0;
+     
+    }
+    
+    nav {
+        padding-left: 0;
+    }
+
+    footer a {
+        color: white;
+        flex-direction: column;
     }
   }
