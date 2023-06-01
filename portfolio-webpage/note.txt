@@ -1,0 +1,22 @@
+my notes
+
+in the navbar 
+turn "a" into display: block;
+ or inline-block;
+now i can sizing his padding to take all
+the height of navbar 
+
+in #projects when i link in the page I need to put 
+a padding: 5rem 2rem; to see the title when i navigate
+with the menu button "work"
+title 
+
+in body the overflow hidden , i can't scroll my page
+
+
+problèmes pas resolus:
+la barra footer ne se met pas a la suite 
+
+
+piste à voir:
+display: inline;
