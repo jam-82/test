@@ -20,3 +20,15 @@ la barra footer ne se met pas a la suite
 
 piste à voir:
 display: inline;
+
+
+place-items: center;
+
+
+width: fit-content;
+
+
+
+j'ai enlevé le 100vh de mon #projects section
+ainsi j'ai resolu le problem d'affichage de
+mon footer, maintenant il est bien separé.
