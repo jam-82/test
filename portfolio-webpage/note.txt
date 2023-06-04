@@ -32,3 +32,10 @@ width: fit-content;
 j'ai enlevé le 100vh de mon #projects section
 ainsi j'ai resolu le problem d'affichage de
 mon footer, maintenant il est bien separé.
+
+
+display: inline-block; dans le chevron de "show all"
+cela empeche le dimension du bloc de changer
+
+z-index dans la navbar pour empecher le chevron de passer
+à travers.
