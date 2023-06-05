@@ -123,7 +123,7 @@ h6 {
     border-bottom: 5px solid var(--neutral);
     width: fit-content;
     font-size: 25px;
-    padding: 0 40px;
+    padding: 0 14px;
     margin: 50px auto;
 }
 #projects .project-tile p {
@@ -199,6 +199,7 @@ h6 {
     margin-top: 30px;
     flex-wrap: wrap;
     max-width: 1000px;
+    line-height: 1.5;
   }
 
   #contact-section .social-media {
@@ -219,6 +220,10 @@ h6 {
     color: var(--primary);
     font-size: 25px;
     font-style: italic;
+  }
+
+  .social-media .ri {
+    padding-left: 5px;
   }
 
   /*===footer===*/
