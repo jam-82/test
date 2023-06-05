@@ -10,72 +10,89 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <title>personal portfolio</title>
 </head>
 <body>
+    <!--===header-navbar===-->
     <header>
         <nav id="navbar">
             <ul class="nav-links">
                 <li><a href="#welcome-section" class="nav-link">Welcome</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact-section" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <!--===welcome-section===-->
     <section id="welcome-section">
         <h1>Hi, I am Alexander</h1>
         <p>A front-end developer</p>
     </section>
+
+    <!--===project-section===-->
     <section id="projects">
         <h1>These are some of my projects</h1>
         <div class="allProjects">
             <a href="" class="project-tile">
-                <img src="survey.png" alt="">
-                <p><span></span>Survey<span></span></p>
+                <img src="img-portfolio/survey.png" alt="">
+                <p><span>&lt;</span>Survey<span>/&gt;</span></p>
+               
             </a>
             <a href="" class="project-tile">
-                <img src="tribute-page.png" alt="">
-                <p><span></span><span>Tribute Page</span></p>
+                <img src="img-portfolio/tribute-page.png" alt="">
+                <p><span>&lt;</span>Tribute Page<span>/&gt;</span></p>
             </a>
             <a href="" class="project-tile">
-                <img src="technical-doc.png" alt="">
-                <p><span></span>Technical Documentation<span></span></p>
+                <img src="img-portfolio/technical-doc.png" alt="">
+                <p><span>&lt;</span>Technical Documentation<span>/&gt;
+                </span></p>
             </a>
             <a href="" class="project-tile">
-                <img src="city-skyline.png" alt="">
-                <p><span></span>City Skyline<span></span></p>
+                <img src="img-portfolio/city-skyline.png" alt="">
+                <p><span>&lt;</span>City Skyline<span>/&gt;
+                </span></p>
             </a>
             <a href="" class="project-tile">
-                <img src="landing-page.png" alt="">
-                <p><span></span>Landing Page<span></span></p>
+                <img src="img-portfolio/landing-page.png" alt="">
+                <p><span>&lt;</span>Landing Page<span>/&gt;
+                </span></p>
             </a>
             <a href="" class="project-tile">
-                <img src="portfolio.png" alt="">
-                <p><span></span>Portfolio<span></span></p>
+                <img src="img-portfolio/portfolio.png" alt="">
+                <p><span>&lt;</span>Portfolio<span>/&gt;
+                </span></p>
             </a>
         </div>
+        <a href="" class="show-all"> Show All <i class="ri-arrow-drop-right-line ri-2x"></i></a>
     </section>
+
+    <!--===contact-section===-->
     <section id="contact-section">
         <h1>Let's work together...</h1>
-        <h3>How do you take your coffe?</h3>
-        <ul> 
-          <li>
-            <a href="https://facebook.com/" id="contact-link">Facebook</a>
-          </li>
-          <li>
-            <a href="https://github.com/" id="contact-link">Github</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/" id="contact-link" target="_blank">Twitter</a>
-          </li>
-          <li>
-            <a href="#" id="profile-link" target="_blank">Send a mail</a>
-          </li>
-         
-          <li>
-            <a href="#" id="profile-link" target="_blank">Call me</a>
-          </li>
-        </ul>  
+        <p class="coffee-question">How do you take your coffee?</p>
+        
+        <div class="social-medias">
+            <a href="https://facebook.com/" class="social-media" id="profile-link"><i class="ri-facebook-box-fill ri-2x"></i>
+                <p>Facebook</p></a>
+            <a href="https://github.com/jam-82" class="social-media" target="_blank" id="profile-link"><i class="ri-github-fill ri-2x"></i>
+                <p>Github</p></a>
+            <a href="https://twitter.com/" class="social-media" target="_blank" id="profile-link"><i class="ri-twitter-fill ri-2x"></i>
+                <p>Twitter</p></a>
+            <a href="#" target="_blank" class="social-media" id="profile-link"><i class="ri-fire-fill ri-2x"></i>
+                <p>FreeCodeCamp</p></a>
+            <a href="#" target="_blank" class="social-media" id="profile-link"><i class="ri-at-line ri-2x"></i>
+                <p>Send a mail</p></a>
+            <a href="#" target="_blank" class="social-media" id="profile-link"><i class="ri-cellphone-fill ri-2x"></i>
+                <p>Call me</p></a>
+        </div> 
       </section>
+
+      <!--===footer===-->
+      <footer>
+        Created by Alexander june 2023
+      </footer>
+
 </body>
 </html> 
