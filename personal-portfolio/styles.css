@@ -9,9 +9,12 @@
 
 * {
     margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
+    box-sizing: border-box;
     font-family: "Noto serif", "sans-serif";
     text-align: center;
     background-color: var(--neutral);
@@ -28,13 +31,14 @@ h6 {
 
 
 
-
+/*=====navbar=====*/
 #navbar {
+    width: 100%;
+    background-color: #521820;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     position: fixed;
     top: 0;
-    background-color: var(--neutral);
     padding: 20px 0;
     font-size: 20px;
     border-bottom: 1px solid var(--neutral-focus);
@@ -43,6 +47,7 @@ h6 {
 .nav-links {
     display: flex;
     list-style:none;
+    padding-left: 40px;
 }
 
 .nav-link {
@@ -54,20 +59,20 @@ h6 {
     text-decoration: underline;
 }
 
-section {
-    padding: 70px 0;
-    min-height: 100vh;
-}
+/*=====welcome-section=====*/
+
 
 #welcome-section {
+    height: 100vh;
     background-color: var(--neutral);
     color: var(--base-100);
     display: flex;
     flex-direction: column;
+    margin-bottom: 120px;
 }
 
 #welcome-section h1 {
-    margin-top: 30vh;
+    margin-top: 40vh;
     font-size: 60px;
 }
 #welcome-section p {
@@ -77,7 +82,9 @@ section {
     font-style: italic;
 }
 
-#projets .allProjects {
+/*=====project-section=====*/
+
+#projects .allProjects {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
      gap: 30px;
@@ -87,16 +94,15 @@ section {
 }
 
 #projects .project-tile {
-    height: 100%;
+    height: 525px;
     width: 100%;
     display: flex;
    flex-direction: column;
-   align-items: center;
-   justify-content: center;
+   place-items: center;
    background-color: var(--neutral);
    color:  var(--accent);
    border-radius: 5px;
-   box-shadow: 8px 8px 10px 5px rgba(100, 100,100,1);
+   box-shadow: 2px 1px 2px rgba(113, 41, 41, 0.3);
 }   
 
 
@@ -109,32 +115,130 @@ section {
 #projects {
     background-color: var(--secondary);
     color: var(--neutral);
+    padding: 55px;
 }
 
 
 #projects h1 {
     border-bottom: 5px solid var(--neutral);
     width: fit-content;
-    margin: auto;
+    font-size: 25px;
+    padding: 0 40px;
+    margin: 50px auto;
+}
+#projects .project-tile p {
+    font-size: 25px;
+    padding: 14px;
+}
+#projects a {
+    text-decoration: none;
 }
 
-#contact-section {
-    color: var(--base-100);
+#projects .project-tile span {
+    opacity: 0%;
+    padding: 0 5px;
 }
-#contact-section ul{
+#projects .project-tile:hover span {
+    opacity: 100%;
+    color: var(--primary);
+    transition: opacity 0.45s ease-in;
+}
+
+
+
+/*=====show all link button====*/
+
+.show-all {
+    text-decoration: none;
+    width: max-content;
     display: flex;
-    justify-content: space-around;
-  }
+    align-items: center;
+    margin: auto;
+    padding: 0px 15px;
+    background-color: var(--neutral);
+    color: var(--accent);
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+    margin-top: 60px;
+}
+
+.show-all:hover {
+    background-color: var(--neutral-focus);
+    color: var(--base-100);
+
+}
+
+
+/*=====contact-section=====*/
+#contact-section {
+    background-color: var(--neutral);
+    color: var(--base-100);
+    height: 50vh;
+ 
+}
+
   
-  a {
+  #contact-section a {
     font-size: 1.5rem;
     text-decoration: none;
     color: var(--secondary);
   }
 
-  li {
-    list-style: none;
+  
+  #contact-section h1 {
+    font-size: 4rem;
+    margin-top: 400px;
+}
+
+  #contact-section .social-medias {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
   }
-  #contact-section h3 {
-    margin-bottom: 30px;
+
+  #contact-section .social-media {
+    text-decoration: none;
+    color: var(--base-100);
+    transition: transform 0.2s ease-in;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+  }
+
+  #contact-section .social-media:hover {
+    transform: translateY(10px);
+
+  }
+
+  #contact-section .coffee-question {
+    color: var(--primary);
+    font-size: 25px;
+    font-style: italic;
+  }
+
+  /*===footer===*/
+  footer {
+    border-top: 4px solid var(--primary);
+    color: var(--base-100);
+    font-size: 25px;
+    padding: 30px;
+  }
+
+/*====mediaqueries===*/
+  @media only screen and (width < 700px) {
+    h1 {
+        font-size: 50px;
+    }
+    #projects .projects-tile {
+        height: 400px;
+        width: 100%;
+    }
+    #projects .projects-tile img {
+        object-fit: contain;
+    }
   }
