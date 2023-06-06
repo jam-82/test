@@ -178,24 +178,25 @@ img {
   margin: 0;
   transition: background-color 0.8s ease-out;
 }
-.btn-show-all:hover > i {
-  transform: translateX(2px);
-}
 .btn-show-all > i {
   display: inline-block;
   margin-left: 10px;
   transform: translateX(0);
 }
+.btn-show-all:hover > i {
+  transform: translateX(4px);
+}
 .btn-show-all:hover {
   background-color:rgb(222, 49, 49);
 
 }
-.fas {
-  display: inline-block;
-}
 .btn-show-all:hover > i {
   margin-left: 10px;
   transition: transform 0.3s ease-out;
+}
+
+.fas {
+  display: inline-block;
 }
 
 /*========contact section=======*/
