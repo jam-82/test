@@ -2,7 +2,8 @@
     --neutral: #232946;
     --base-100: #fffffe;
     --neutral-focus: #121629;
-    --primary: #eebbc3;
+    --primary: blue;
+    /* --primary: #eebbc3; */
     --secondary: #b8c1ec;
     --accent: #d4d8f0;
 }
@@ -51,17 +52,17 @@ h6 {
 }
 
 .nav-link {
-    padding: 0 30px;
+    padding: 20px 30px;
     text-decoration: none;
     color: var(--base-100);
+    height: 100%;
 }
 .nav-link:hover {
-    text-decoration: underline;
+   background-color: blue;
+   
 }
 
 /*=====welcome-section=====*/
-
-
 #welcome-section {
     height: 100vh;
     background-color: var(--neutral);
@@ -84,6 +85,11 @@ h6 {
 
 /*=====project-section=====*/
 
+#projects {
+    background-color: var(--secondary);
+    color: var(--neutral);
+    padding: 55px;
+}
 #projects .allProjects {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -94,7 +100,7 @@ h6 {
 }
 
 #projects .project-tile {
-    height: 525px;
+    height: 505px;
     width: 100%;
     display: flex;
    flex-direction: column;
@@ -107,16 +113,13 @@ h6 {
 
 
 #projects .project-tile img {
-    height: 100%;
+    height: 80%;
     width: 100%;
     object-fit: cover;
+    padding: 15px;
 }
 
-#projects {
-    background-color: var(--secondary);
-    color: var(--neutral);
-    padding: 55px;
-}
+
 
 
 #projects h1 {
@@ -136,7 +139,7 @@ h6 {
 
 #projects .project-tile span {
     opacity: 0%;
-    padding: 0 5px;
+    padding: 0 10px;
 }
 #projects .project-tile:hover span {
     opacity: 100%;
@@ -153,23 +156,36 @@ h6 {
     width: max-content;
     display: flex;
     align-items: center;
-    margin: auto;
-    padding: 0px 15px;
+    margin: 60px auto;
+    margin-bottom: 5px;
+    padding: 0.5rem 1rem;
     background-color: var(--neutral);
     color: var(--accent);
     font-size: 25px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.2s ease-in;
-    margin-top: 60px;
+    transition: background-color 0.7s ease-in;
+}
+
+.show-all:hover > i {
+    transition: transform 0.3s ease-in;
 }
 
 .show-all:hover {
-    background-color: var(--neutral-focus);
+    background-color: rgb(82, 37, 37);
     color: var(--base-100);
-
 }
 
+.show-all > i {
+    display: inline-block;
+    margin-left: 5px;
+    transform: translateX(0);
+
+}
+.show-all:hover > i {
+    transform: translateX(3px);
+
+}
 
 /*=====contact-section=====*/
 #contact-section {
@@ -213,7 +229,7 @@ h6 {
   }
 
   #contact-section .social-media:hover {
-    transform: translateY(10px);
+    transform: translateY(5px);
 
   }
 
