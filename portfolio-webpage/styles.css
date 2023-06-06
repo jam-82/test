@@ -106,6 +106,14 @@ body {
   background-color: #45567d;
 }
 
+.project-header {
+  border-bottom: 5px solid #3e3535;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  max-width: 640px;
+  font-size: 2.5rem;
+}
 #grid-projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -139,6 +147,7 @@ body {
 #grid-projects a:hover .code {
   color: rgb(179, 120, 91);
   transition: color 0.8s ease-in;
+  transition: opacity 0.8s ease-in;
 }
 
 
@@ -162,15 +171,16 @@ img {
 }
 
 
-.project-header {
-  border-bottom: 5px solid #3e3535;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 6rem;
-  max-width: 640px;
-  font-size: 2.5rem;
+
+.project-tile .code {
+  opacity: 0%;
+  
+}
+.project-tile:hover .code {
+  opacity: 100%;
 }
 
+/*===show all===*/
 .btn-show-all {
   font-size: 1.4rem;
   text-decoration: none;
